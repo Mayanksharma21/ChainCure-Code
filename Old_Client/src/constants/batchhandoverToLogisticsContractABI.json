@@ -1,0 +1,119 @@
+[
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "senderAddress",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "logisticsAddress",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "string[]",
+				"name": "batchIds",
+				"type": "string[]"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "batchQuantity",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "batchPhotoIpfsHashedUrl",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "timestamp",
+				"type": "uint256"
+			}
+		],
+		"name": "BatchHandoverSuccessful",
+		"type": "event"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_manufacturer",
+				"type": "address"
+			}
+		],
+		"name": "getHandoverList",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "address",
+						"name": "logisticsAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "string[]",
+						"name": "batchIds",
+						"type": "string[]"
+					},
+					{
+						"internalType": "uint256",
+						"name": "batchQuantity",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "batchPhotoIpfsHashedUrl",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct BatchHandoverToLogistics.Handover[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_logisticsAddress",
+				"type": "address"
+			},
+			{
+				"internalType": "string[]",
+				"name": "_batchIds",
+				"type": "string[]"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_batchQuantity",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_batchPhotoIpfsHashedUrl",
+				"type": "string"
+			}
+		],
+		"name": "handoverToLogistics",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	}
+]

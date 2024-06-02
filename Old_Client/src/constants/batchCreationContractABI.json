@@ -1,0 +1,92 @@
+[
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "_batchId",
+				"type": "string"
+			}
+		],
+		"name": "BatchRegistrationSuccessfulEvent",
+		"type": "event"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_batchId",
+				"type": "string"
+			}
+		],
+		"name": "getBatchDetails",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "manufacturerAddress",
+				"type": "address"
+			},
+			{
+				"internalType": "string",
+				"name": "CDSCOApprovalId",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "drugName",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "expiryDate",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "drugQuantity",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "timestamp",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_batchId",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_CDSCOApprovalId",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_drugName",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_drugExpiry",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_drugQuantity",
+				"type": "uint256"
+			}
+		],
+		"name": "registerBatch",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	}
+]

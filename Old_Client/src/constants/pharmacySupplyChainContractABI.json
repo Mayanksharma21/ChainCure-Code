@@ -1,0 +1,229 @@
+[
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "string",
+				"name": "batchId",
+				"type": "string"
+			},
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "transferAddress",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "transferType",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "transferBatchId",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "timestamp",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "transferPhoto",
+				"type": "string"
+			}
+		],
+		"name": "BatchTransferred",
+		"type": "event"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"name": "allBatches",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "manufacturerAddress",
+				"type": "address"
+			},
+			{
+				"internalType": "string",
+				"name": "CDSCOApprovalId",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "drugName",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "drugExpiry",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "drugQuantity",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "timestamp",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_batchId",
+				"type": "string"
+			},
+			{
+				"internalType": "address",
+				"name": "_manufacturerAddress",
+				"type": "address"
+			},
+			{
+				"internalType": "string",
+				"name": "_CDSCOApprovalId",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_drugName",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_drugExpiry",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_drugQuantity",
+				"type": "uint256"
+			}
+		],
+		"name": "createBatch",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_batchId",
+				"type": "string"
+			}
+		],
+		"name": "getBatchDetails",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "manufacturerAddress",
+				"type": "address"
+			},
+			{
+				"internalType": "string",
+				"name": "CDSCOApprovalId",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "drugName",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "drugExpiry",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "drugQuantity",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "timestamp",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address[]",
+				"name": "transferAddresses",
+				"type": "address[]"
+			},
+			{
+				"internalType": "string[]",
+				"name": "transferTypes",
+				"type": "string[]"
+			},
+			{
+				"internalType": "string[]",
+				"name": "transferBatchIds",
+				"type": "string[]"
+			},
+			{
+				"internalType": "uint256[]",
+				"name": "transferTimestamps",
+				"type": "uint256[]"
+			},
+			{
+				"internalType": "string[]",
+				"name": "transferPhotos",
+				"type": "string[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_batchId",
+				"type": "string"
+			},
+			{
+				"internalType": "address",
+				"name": "_transferAddress",
+				"type": "address"
+			},
+			{
+				"internalType": "string",
+				"name": "_transferType",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_transferBatchId",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_transferPhoto",
+				"type": "string"
+			}
+		],
+		"name": "transferBatch",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	}
+]
