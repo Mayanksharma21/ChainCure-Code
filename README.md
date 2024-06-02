@@ -66,4 +66,10 @@ The frontend of ChainCure is built using **React** and **Tailwind CSS**, providi
 
 ## Glimpse of Project
 
-1. ![Login Page](https://github.com/Mayanksharma21/ChainCure-Code/assets/86908473/452cc404-fc22-48de-b313-6ecfd8096a74)  
+   ![Login Page](https://github.com/Mayanksharma21/ChainCure-Code/assets/86908473/452cc404-fc22-48de-b313-6ecfd8096a74)  
+
+   ![Login Form](https://github.com/Mayanksharma21/ChainCure-Code/assets/86908473/4e278aed-84ad-4fc4-9260-69e88ddfea29)
+
+   ![New Batch Creation Page for Manufacturer](https://github.com/Mayanksharma21/ChainCure-Code/assets/86908473/fe883052-25a6-4b7d-afa7-e757ad3e475a)
+
+
